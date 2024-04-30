@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<center>
+
+<b> <p class="Intro">DESCUBRE LA ESCENCIAL POLINIZACION DE MEXICO. </b>
+<br>
+<br>
+La polinización en México es un proceso vital que contribuye significativamente a la producción de alimentos y la biodiversidad. Con una gran diversidad de especies de plantas y una variedad de polinizadores, como las abejas nativas y las mariposas monarca, México alberga un ecosistema único y crucial para la polinización. 
+
+</p>
+</center>
+
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POLINIZACION</title>
+<style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFCC01; 
+    transition: background-color 2s ease-in-out;
+  }
+
+  #Fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    transition: opacity 2s ease-in-out
+  }
+
+  #Icono {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    opacity: 0;
+    width: 15%;
+    height: 23%;
+    z-index: 3;
+    transition: opacity 2s ease-in-out, transform 0.3s ease; 
+  }
+
+  #Info {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 60%;
+    height: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  #Info2 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 60%;
+    height: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  #Info3 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 60%;
+    height: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  #Info4 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 60%;
+    height: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  #Icono2 {
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    opacity: 0;
+    width: 15%;
+    height: 23%;
+    z-index: 3;
+    transition: opacity 2s ease-in-out, transform 0.3s ease; 
+  }
+
+  #Icono3 {
+    position: absolute;
+    top: 57%;
+    left: 5%;
+    opacity: 0;
+    width: 15%;
+    height: 23%;
+    z-index: 3;
+    transition: opacity 2s ease-in-out, transform 0.3s ease; 
+  }
+
+  #Icono4 {
+    position: absolute;
+    top: 78%;
+    left: 5%;
+    opacity: 0;
+    width: 15%;
+    height: 23%;
+    z-index: 3;
+    transition: opacity 2s ease-in-out, transform 0.3s ease; 
+  }
+
+  #Imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out; 
+  }
+
+
+.Intro {
+    font-family: "Arial", sans-serif;
+    z-index: 1;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: opacity 2s ease-in-out;
+  }
+
+.Intro.FadeT{
+opacity: 1;
+}
+
+#Fondo.Fade {
+opacity: 1;
+}
+
+#Icono.Fade {
+opacity: 1;
+}
+
+#Icono2.Fade {
+opacity: 1;
+}
+
+#Icono3.Fade {
+opacity: 1;
+}
+
+#Icono4.Fade {
+opacity: 1;
+}
+
+#Imagen.Fade {
+transform: translate(-50%, -50%) scale(0);
+opacity: 0;
+ }
+
+#Info.FadeI {
+opacity: 1;
+}
+
+#Info.FadeO {
+opacity: 0;
+}
+
+</style>
+</head>
+
+<body>
+<img id="Fondo" src="E:\Pagina\Fondo.gif" alt="Imagenn">
+
+<img id="Icono" src="E:\Pagina\seleccionador\Icono1.png" alt="Imagenn">
+<img id="Icono2" src="E:\Pagina\seleccionador\Icono2.png" alt="Imagenn">
+<img id="Icono3" src="E:\Pagina\seleccionador\Icono3.png" alt="Imagenn">
+<img id="Icono4" src="E:\Pagina\seleccionador\Icono4.png" alt="Imagenn">
+
+ <img id="Imagen" src="E:\Pagina\Icono.png" alt="Imagenn">
+
+<img id="Info" src="E:\Pagina\seleccionador\t1.png" alt="Imagenn">
+<img id="Info2" src="E:\Pagina\seleccionador\t2.png" alt="Imagenn">
+<img id="Info3" src="E:\Pagina\seleccionador\t3.png" alt="Imagenn">
+<img id="Info4" src="E:\Pagina\seleccionador\t4.png" alt="Imagenn">
+
+
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById("Imagen").classList.add("Fade");
+      document.getElementById("Fondo").classList.add("Fade");
+      document.querySelector('.Intro').classList.add('FadeT');
+      document.getElementById("Icono").classList.add("Fade");
+      document.getElementById("Icono2").classList.add("Fade");
+      document.getElementById("Icono3").classList.add("Fade");
+      document.getElementById("Icono4").classList.add("Fade");
+    }, 1000);
+  };  
+   setTimeout(function() {
+      document.body.style.backgroundColor = "#F7EFDB"; 
+    }, 1000);
+
+   setTimeout(function() {
+      document.getElementById("AbejaGay").classList.add("Fade");
+    }, 2000);
+</script>
+
+<script>
+  const f1 = document.querySelector('#Icono');
+  const f2 = document.querySelector('#Icono2');
+
+  f1.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.1)';
+    document.getElementById("Info").style.opacity = '1';
+  });
+  f1.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1)';
+    document.getElementById("Info").style.opacity = '0';
+  });
+  f2.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.1)';
+    document.getElementById("Info2").style.opacity = '1';
+  });
+  f2.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1)';
+    document.getElementById("Info2").style.opacity = '0';
+  });
+ </script>
+
+<script>
+  const f3 = document.querySelector('#Icono3');
+  const f4 = document.querySelector('#Icono4');
+
+  f3.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.1)';
+    document.getElementById("Info3").style.opacity = '1';
+  });
+  f3.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1)';
+    document.getElementById("Info3").style.opacity = '0';
+  });
+  f4.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.1)';
+    document.getElementById("Info4").style.opacity = '1';
+  });
+  f4.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1)';
+    document.getElementById("Info4").style.opacity = '0';
+  });
+ </script>
+<center>
+<a href="https://www.gob.mx/semarnat%7Cpolinizadores/articulos/que-son-los-polinizadores">-QUE SON LOS POLINIZADORES?-</a>
+<a href="https://www.polinizadores.com/ar/polinizacion">-Polinizacion-</a>
+<a href="http://buenosaires.gob.ar/contenidos-educativos/polinizadores">-Contenido-</a>
+<br><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IaYrrQXJBxY?si=Wz_r8p7jBfXKKyoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+</body>
+</html>
